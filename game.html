@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spend Jeff Bezos's Money</title>
+    <link rel="script" href="./index.js" />
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="icon" href="./Icon.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="You-Won" class="You-Won">
+      <div class="You-Won-Title-Div">
+        <p class="You-Won-Title">You Won!</p>
+        <img class="You-Won-Img" src="./You-Won.gif" alt="" />
+      </div>
+      <p class="You-Won-Text">You Spent All Of Jeff Bezos's Money</p>
+      <p class="You-Won-Text">Here Is Your receipt</p>
+      <div class="receipt"></div>
+    </div>
+
+    <script src="./index.js"></script>
+    <div id="Top-Bar" class="Top-Bar">
+      <div class="Title">
+        <h1>Spend Jeff Bezos's Money</h1>
+      </div>
+      <div class="Money-Div">
+        <p class="Jeff-Has">Jeff Has:</p>
+        <p id="Ammount" class="Ammount">$198900000000</p>
+      </div>
+    </div>
+
+    <div id="Row-One" class="Row-One">
+      <div class="Item-Div">
+        <p class="Item-Title">Flip Flops</p>
+        <img class="Item-Img" src="./Flip-Flops.png" alt="" />
+        <p class="Item-Price" id="Flip-Flop-Price">$3</p>
+        <button class="Buy-Item" id="Buy-Flip-Flops" onclick="BuyFlipFlops()">
+          Buy Now
+        </button>
+      </div>
+      <div class="Item-Div">
+        <p class="Item-Title">Coffee</p>
+        <img class="Item-Img" src="./Coffee.png" alt="" />
+        <p id="Coffee-Price" class="Item-Price">$5</p>
+        <button class="Buy-Item" id="Buy-Coffee" onclick="BuyCoffee()">
+          Buy Now
+        </button>
+      </div>
+      <div class="Item-Div">
+        <p class="Item-Title">Light Bulb</p>
+        <img class="Item-Img" src="./Light-Bulb.png" alt="" />
+        <p id="Light-Bulb-Price" class="Item-Price">$10</p>
+        <button class="Buy-Item" id="Buy-Light-Bulb" onclick="BuyLightBulb()">
+          Buy Now
+        </button>
+      </div>
+    </div>
+
+    <div id="Row-Two" class="Row-Two">
+      <div class="Item-Div">
+        <p class="Item-Title">Iphone Cable</p>
+        <img class="Item-Img" src="./Iphone-Cord.png" alt="" />
+        <p id="Iphone-Cable-Price" class="Item-Price">$30</p>
+        <button class="Buy-Item" id="Buy-Iphone-Cord" onclick="BuyIphoneCord()">
+          Buy Now
+        </button>
+      </div>
+      <div class="Item-Div">
+        <p class="Item-Title">One Year Of Netflix</p>
+        <img class="Item-Img" src="./Netflix.png" alt="" />
+        <p id="Netflix-Price" class="Item-Price">$168</p>
+        <button class="Buy-Item" id="Buy-Netflix" onclick="BuyNetflix()">
+          Buy Now
+        </button>
+      </div>
+      <div class="Item-Div">
+        <p class="Item-Title">Ipad</p>
+        <img class="Item-Img" src="./Ipad.png" alt="" />
+        <p id="Ipad-Price" class="Item-Price">$329</p>
+        <button class="Buy-Item" id="Buy-Ipad" onclick="BuyIpad()">
+          Buy Now
+        </button>
+      </div>
+    </div>
+
+    <div id="Row-Three" class="Row-Three">
+      <div class="Item-Div">
+        <p class="Item-Title">Iphone 12</p>
+        <img class="Item-Img" src="./Iphone.png" alt="" />
+        <p id="Iphone-Price" class="Item-Price">$829</p>
+        <button id="Buy-Iphone" class="Buy-Item" onclick="BuyIphone()">
+          Buy Now
+        </button>
+      </div>
+      <div class="Item-Div">
+        <p class="Item-Title">Bike</p>
+        <img class="Item-Img" src="./Bike.png" alt="" />
+        <p id="Bike-Price" class="Item-Price">$1,000</p>
+        <button id="Buy-Bike" class="Buy-Item" onclick="BuyBike()">
+          Buy Now
+        </button>
+      </div>
+      <div class="Item-Div">
+        <p class="Item-Title">Used Kia</p>
+        <img class="Item-Img" src="./Kia.png" alt="" />
+        <p id="Kia-Price" class="Item-Price">$5,000</p>
+        <button id="Buy-Kia" onclick="BuyKia()" class="Buy-Item">
+          Buy Now
+        </button>
+      </div>
+    </div>
+
+    <div id="Row-Four" class="Row-Four">
+      <div class="Item-Div">
+        <p class="Item-Title">Rolex</p>
+        <img class="Item-Img" src="./Rolex.png" alt="" />
+        <p id="Rolex-Price" class="Item-Price">$12,000</p>
+        <button id="Buy-Rolex" class="Buy-Item" onclick="BuyRolex()">
+          Buy Now
+        </button>
+      </div>
+      <div class="Item-Div">
+        <p class="Item-Title">Expensive Wine</p>
+        <img class="Item-Img" src="./Wine.png" alt="" />
+        <p id="Wine-Price" class="Item-Price">$20,000</p>
+        <button id="Buy-Wine" class="Buy-Item" onclick="BuyWine()">
+          Buy Now
+        </button>
+      </div>
+      <div ondblclick="Ferrari-Price" class="Item-Div">
+        <p class="Item-Title">Ferrari</p>
+        <img class="Item-Img" src="./Ferrari.png" alt="" />
+        <p id="Ferrari-Price" class="Item-Price">$200,000</p>
+        <button id="Buy-Ferrari" onclick="BuyFerrari()" class="Buy-Item">
+          Buy Now
+        </button>
+      </div>
+    </div>
+
+    <div id="Row-Five" class="Row-Five">
+      <div class="Item-Div">
+        <p class="Item-Title">Camper</p>
+        <img class="Item-Img" src="./Camper.jpeg" alt="" />
+        <p id="Camper-Price" class="Item-Price">3 Million</p>
+        <button id="Buy-Camper" class="Buy-Item" onclick="BuyCamper()">
+          Buy Now
+        </button>
+      </div>
+      <div class="Item-Div">
+        <p class="Item-Title">private plane</p>
+        <img class="Item-Img" src="./Plane.png" alt="" />
+        <p id="Plane-Price" class="Item-Price">20 Million</p>
+        <button id="Buy-Plane" class="Buy-Item" onclick="BuyPrivatePlane()">
+          Buy Now
+        </button>
+      </div>
+      <div class="Item-Div">
+        <p class="Item-Title">Mansion</p>
+        <img class="Item-Img" src="./House.png" alt="" />
+        <p id="Mansion-Price" class="Item-Price">25 Million</p>
+        <button id="Buy-Mansion" class="Buy-Item" onclick="BuyMansion()">
+          Buy Now
+        </button>
+      </div>
+    </div>
+
+    <div id="Row-Six" class="Row-Six">
+      <div class="Item-Div">
+        <p class="Item-Title">Rolls-Royce Boat Tail</p>
+        <img class="Item-Img" src="./Car.jpeg" alt="" />
+        <p id="Car-Price" class="Item-Price">21 Million</p>
+        <button id="Buy-Car" class="Buy-Item" onclick="BuyCar()">
+          Buy Now
+        </button>
+      </div>
+      <div class="Item-Div">
+        <p class="Item-Title">Large Yacht</p>
+        <img class="Item-Img" src="./Yacht.png" alt="" />
+        <p id="Yacht-Price" class="Item-Price">200 Million</p>
+        <button id="Buy-Yacht" class="Buy-Item" onclick="BuyYacht()">
+          Buy Now
+        </button>
+      </div>
+      <div class="Item-Div">
+        <p class="Item-Title">Boeing 747</p>
+        <img class="Item-Img" src="./Jet.png" alt="" />
+        <p id="Jet-Price" class="Item-Price">400 Million</p>
+        <button id="Buy-Jet" onclick="BuyJet()" class="Buy-Item">
+          Buy Now
+        </button>
+      </div>
+    </div>
+
+    <div id="Row-Seven" class="Row-Seven">
+      <div class="Item-Div-2">
+        <p class="Item-Title">Skyscraper</p>
+        <img class="Item-Img" src="./Skyscraper.png" alt="" />
+        <p id="Skyscraper-Price" class="Item-Price">1 Billion</p>
+        <button id="Buy-Skyscraper" class="Buy-Item" onclick="BuySkyscraper()">
+          Buy Now
+        </button>
+      </div>
+      <div class="Item-Div">
+        <p class="Item-Title">Mona Lisa</p>
+        <img class="Item-Img" src="./Mona-Lisa.jpeg" alt="" />
+        <p id="Lisa-Price" class="Item-Price">860 Million</p>
+        <button id="Buy-Lisa" class="Buy-Item" onclick="BuyLisa()">
+          Buy Now
+        </button>
+      </div>
+
+      <div class="Item-Div">
+        <p class="Item-Title">Cheeseburger</p>
+        <img class="Item-Img" src="./Cheeseburger.png" alt="" />
+        <p id="Cheeseburger-Price" class="Item-Price">$1</p>
+        <button
+          id="Buy-Cheeseburger"
+          class="Buy-Item"
+          onclick="BuyCheeseburger()"
+        >
+          Buy Now
+        </button>
+      </div>
+    </div>
+
+    <div id="Total" class="Total">
+      <p class="Total-Title">Total</p>
+      <div class="Total-SubTitle">
+        <p class="Subtitle">QTY</p>
+        <p class="Subtitle">Item</p>
+        <p class="Subtitle">Price</p>
+      </div>
+      <div class="Total-Bar"></div>
+
+      <div id="Total-Flip-Flops" class="Total-Filp-Flops">
+        <p id="Total-Flip-Flops-QTY" class="Total-Text">0</p>
+        <p class="Total-Text">Flip Flops</p>
+        <p id="Total-Flip-Flops-Price" class="Total-Text">$0</p>
+      </div>
+
+      <div id="Total-Coffee" class="Total-Coffee">
+        <p id="Total-Coffee-QTY" class="Total-Text">0</p>
+        <p class="Total-Text">Coffee</p>
+        <p id="Total-Coffee-Price" class="Total-Text">$0</p>
+      </div>
+
+      <div id="Total-Light-Bulbs" class="Total-Light-Bulbs">
+        <p id="Total-Light-Bulbs-QTY" class="Total-Text">0</p>
+        <p class="Total-Text">Light Bulbs</p>
+        <p id="Total-Light-Bulbs-Price" class="Total-Text">$0</p>
+      </div>
+
+      <div id="Total-Iphone-Cable" class="Total-Iphone-Cable">
+        <p id="Total-Iphone-Cable-QTY" class="Total-Text">0</p>
+        <p class="Total-Text">Iphone Cable</p>
+        <p id="Total-Iphone-Cable-Price" class="Total-Text">$0</p>
+      </div>
+
+      <div id="Total-Netflix" class="Total-Netflix">
+        <p id="Total-Netflix-QTY" class="Total-Text">0</p>
+        <p class="Total-Text">One Year Of Netflix</p>
+        <p id="Total-Netflix-Price" class="Total-Text">$0</p>
+      </div>
+
+      <div id="Total-Ipad" class="Total-Ipad">
+        <p id="Total-Ipad-QTY" class="Total-Text">0</p>
+        <p class="Total-Text">Ipad</p>
+        <p id="Total-Ipad-Price" class="Total-Text">$0</p>
+      </div>
+
+      <div id="Total-Bike" class="Total-Bike">
+        <p id="Total-Bike-QTY" class="Total-Text">0</p>
+        <p class="Total-Text">Bike</p>
+        <p id="Total-Bike-Price" class="Total-Text">$0</p>
+      </div>
+
+      <div id="Total-Iphone" class="Total-Iphone">
+        <p id="Total-Iphone-QTY" class="Total-Text">0</p>
+        <p class="Total-Text">Iphone</p>
+        <p id="Total-Iphone-Price" class="Total-Text">$0</p>
+      </div>
+
+      <div id="Total-Kia" class="Total-Kia">
+        <p id="Total-Kia-QTY" class="Total-Text">0</p>
+        <p class="Total-Text">Used Kia</p>
+        <p id="Total-Kia-Price" class="Total-Text">$0</p>
+      </div>
+
+      <div id="Total-Rolex" class="Total-Rolex">
+        <p id="Total-Rolex-QTY" class="Total-Text">0</p>
+        <p class="Total-Text">Rolex</p>
+        <p id="Total-Rolex-Price" class="Total-Text">$0</p>
+      </div>
+
+      <div id="Total-Wine" class="Total-Wine">
+        <p id="Total-Wine-QTY" class="Total-Text">0</p>
+        <p class="Total-Text">Expensive Wine</p>
+        <p id="Total-Wine-Price" class="Total-Text">$0</p>
+      </div>
+
+      <div id="Total-Ferrari" class="Total-Ferrari">
+        <p id="Total-Ferrari-QTY" class="Total-Text">0</p>
+        <p class="Total-Text">Ferrari</p>
+        <p id="Total-Ferrari-Price" class="Total-Text">$0</p>
+      </div>
+
+      <div id="Total-Camper" class="Total-Camper">
+        <p id="Total-Camper-QTY" class="Total-Text">0</p>
+        <p class="Total-Text">Camper</p>
+        <p id="Total-Camper-Price" class="Total-Text">$0</p>
+      </div>
+
+      <div id="Total-Plane" class="Total-Plane">
+        <p id="Total-Plane-QTY" class="Total-Text">0</p>
+        <p class="Total-Text">Private Plane</p>
+        <p id="Total-Plane-Price" class="Total-Text">$0</p>
+      </div>
+
+      <div id="Total-Mansion" class="Total-Mansion">
+        <p id="Total-Mansion-QTY" class="Total-Text">0</p>
+        <p class="Total-Text">Mansion</p>
+        <p id="Total-Mansion-Price" class="Total-Text">$0</p>
+      </div>
+
+      <div id="Total-Yacht" class="Total-Yacht">
+        <p id="Total-Yacht-QTY" class="Total-Text">0</p>
+        <p class="Total-Text">Yacht</p>
+        <p id="Total-Yacht-Price" class="Total-Text">$0</p>
+      </div>
+
+      <div id="Total-Car" class="Total-Car">
+        <p id="Total-Car-QTY" class="Total-Text">0</p>
+        <p class="Total-Text">Rolls-Royce Boat Tail</p>
+        <p id="Total-Car-Price" class="Total-Text">$0</p>
+      </div>
+
+      <div id="Total-Jet" class="Total-Jet">
+        <p id="Total-Jet-QTY" class="Total-Text">0</p>
+        <p class="Total-Text">Boeing 747</p>
+        <p id="Total-Jet-Price" class="Total-Text">$0</p>
+      </div>
+
+      <div id="Total-Skyscraper" class="Total-Skyscraper">
+        <p id="Total-Skyscraper-QTY" class="Total-Text">0</p>
+        <p class="Total-Text">Skyscraper</p>
+        <p id="Total-Skyscraper-Price" class="Total-Text">$0</p>
+      </div>
+
+      <div id="Total-Lisa" class="Total-Lisa">
+        <p id="Total-Lisa-QTY" class="Total-Text">0</p>
+        <p class="Total-Text">Mona Lisa</p>
+        <p id="Total-Lisa-Price" class="Total-Text">$0</p>
+      </div>
+
+      <div id="Total-Cheeseburger" class="Total-Cheeseburger">
+        <p id="Total-Cheeseburger-QTY" class="Total-Text">0</p>
+        <p class="Total-Text">Cheeseburger</p>
+        <p id="Total-Cheeseburger-Price" class="Total-Text">$0</p>
+      </div>
+
+      <div class="Total-Price">
+        <p class="Total-Text-Price">Total Price:</p>
+        <p id="Total-Price" class="Total-Text-Price">$0</p>
+      </div>
+      <div class="Total-Bar"></div>
+      <div class="Final-Value">
+        <p id="Final-Math" class="Final-Math">
+          $198900000000 - $0 = $198900000000
+        </p>
+        <p id="Final-Text" class="Final-Text">Final Value: $198900000000</p>
+      </div>
+    </div>
+    <div id="Close-Button" class="Close-Button-Div">
+      <button onclick="CloseWon()" class="Close-Button">Reset</button>
+    </div>
+
+    <footer>
+      <p>Made By Conboy19</p>
+      <button onclick="Bug()" class="Bugs">Report A Bug</button>
+    </footer>
+  </body>
+</html>

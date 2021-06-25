@@ -1,0 +1,349 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Montserrat", sans-serif;
+}
+.Money-Div {
+  display: flex;
+  justify-content: center;
+}
+.Jeff-Has {
+  margin-right: 20px;
+  font-size: 50px;
+}
+.Ammount {
+  font-size: 50px;
+}
+h1 {
+  text-align: center;
+  font-size: 70px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+.Top-Bar {
+  background-color: green;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.Item-Title {
+  font-size: 35px;
+  text-align: center;
+}
+.Item-Div {
+  background-color: lightgreen;
+  width: 30%;
+  margin-left: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  margin-top: 30px;
+  margin-right: 20px;
+  height: 100%;
+}
+.Item-Div-2 {
+  background-color: lightgreen;
+  width: 30%;
+  margin-left: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  margin-top: 30px;
+  margin-right: 20px;
+  height: 100%;
+}
+
+.Item-Div-3 {
+  background-color: lightgreen;
+  width: 30%;
+  margin-left: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  margin-top: 30px;
+  margin-right: 20px;
+  height: 100%;
+}
+.Buy-Item {
+  font-size: 35px;
+  display: block;
+  margin: auto;
+  width: 95%;
+
+  background-color: limegreen;
+  border: none;
+}
+.Item-Price {
+  font-size: 35px;
+  text-align: center;
+}
+.Item-Img {
+  height: 250px;
+  display: block;
+  margin: auto;
+}
+.Row-One,
+.Row-Two,
+.Row-Three,
+.Row-Four,
+.Row-Five,
+.Row-Six,
+.Row-Seven {
+  display: flex;
+  margin: auto;
+  height: 30%;
+}
+.Ammount-Persentige {
+  font-size: 40px;
+  text-align: center;
+}
+
+@media (max-width: 2000px) {
+  .Item-Img {
+    height: 170px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .Item-Img {
+    height: 150px;
+  }
+  .Row-One,
+  .Row-Two,
+  .Row-Three,
+  .Row-Four,
+  .Row-Five,
+  .Row-Six,
+  .Row-Seven {
+    display: block;
+  }
+  .Item-Div {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .Item-Div-2 {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (max-width: 800px) {
+  .Row-One,
+  .Row-Two,
+  .Row-Three,
+  .Row-Four,
+  .Row-Five,
+  .Row-Six,
+  .Row-Seven {
+    display: block;
+  }
+  .Ammount-Bar {
+    display: none;
+  }
+  .Item-Div {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .Item-Div-2 {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  h1 {
+    font-size: 40px;
+  }
+  .Money-Div {
+    display: block;
+  }
+  .Jeff-Has {
+    text-align: center;
+    font-size: 35px;
+  }
+  .Ammount {
+    text-align: center;
+    font-size: 35px;
+  }
+}
+.Total-Bar {
+  height: 5px;
+  width: 95%;
+  background-color: black;
+  position: absolute;
+  margin-left: 2.5%;
+}
+.Total-Title {
+  font-size: 50px;
+  text-align: center;
+}
+.Total {
+  padding-bottom: 50px;
+}
+.Total-SubTitle {
+  display: flex;
+  justify-content: space-between;
+}
+.Subtitle {
+  font-size: 25px;
+  margin-left: 3%;
+  margin-right: 3%;
+  width: 30%;
+}
+.Total-Filp-Flops,
+.Total-Coffee,
+.Total-Light-Bulbs,
+.Total-Iphone-Cable,
+.Total-Netflix,
+.Total-Ipad,
+.Total-Bike,
+.Total-Iphone,
+.Total-Kia,
+.Total-Rolex,
+.Total-Wine,
+.Total-Ferrari,
+.Total-Camper,
+.Total-Plane,
+.Total-Mansion,
+.Total-Car,
+.Total-Yacht,
+.Total-Jet,
+.Total-Skyscraper,
+.Total-Lisa,
+.Total-Cheeseburger {
+  display: flex;
+  justify-content: space-between;
+  display: none;
+}
+.Total-Text {
+  font-size: 20px;
+  margin-left: 3%;
+  margin-right: 3%;
+  width: 30%;
+}
+.Total-Price {
+  display: flex;
+  justify-content: center;
+}
+.Total-Text-Price {
+  margin-right: 10px;
+  font-size: 30px;
+}
+.Final-Text {
+  font-size: 30px;
+  text-align: center;
+}
+.Final-Math {
+  font-size: 20px;
+  text-align: center;
+}
+.Buy-Div {
+  display: flex;
+}
+.Input-Number {
+  font-size: 35px;
+  display: block;
+  margin: auto;
+  width: 95%;
+  border: none;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.You-Won {
+  animation: Won 2s ease;
+  display: none;
+}
+.You-Won-Title {
+  font-size: 100px;
+}
+.You-Won-Text {
+  font-size: 50px;
+  text-align: center;
+}
+.You-Won-Title-Div {
+  display: flex;
+  background-color: lightgreen;
+  justify-content: center;
+}
+.You-Won-Img {
+  height: 250px;
+}
+.Close-Button {
+  width: 25%;
+  background-color: red;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  font-size: 40px;
+  border: none;
+}
+.Close-Button-Div {
+  display: none;
+  margin-bottom: 50px;
+}
+
+@keyframes Won {
+  0% {
+    opacity: 0;
+    transform: scale(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(100%);
+  }
+}
+
+@media (max-width: 800px) {
+  .You-Won-Title-Div {
+    display: block;
+    background: none;
+  }
+  .You-Won-Title {
+    font-size: 50px;
+  }
+  .You-Won-Img {
+    height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .You-Won-Text {
+    font-size: 20px;
+  }
+  .Total-Text {
+    font-size: 10px;
+  }
+  .Total-Title {
+    font-size: 30px;
+  }
+  .Final-Text {
+    font-size: 20px;
+  }
+  .Final-Math {
+    font-size: 20px;
+  }
+  .You-Won-Title-Div {
+    display: block;
+    text-align: center;
+  }
+  .Subtitle {
+    font-size: 15px;
+  }
+  .Total-Text-Price {
+    font-size: 20px;
+  }
+  .Close-Button {
+    width: 95%;
+  }
+}
+footer {
+  display: flex;
+  justify-content: space-around;
+}
+.Bugs {
+  background-color: lightsalmon;
+  font-size: 20px;
+}
