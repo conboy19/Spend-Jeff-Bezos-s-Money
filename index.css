@@ -2,6 +2,7 @@ body {
   margin: 0px;
   padding: 0px;
   font-family: "Montserrat", sans-serif;
+  user-select: none;
 }
 .Money-Div {
   display: flex;
